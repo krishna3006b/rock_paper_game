@@ -1,0 +1,131 @@
+@font-face {
+  font-family: game_font;
+  src: url(BruceForeverRegular-X3jd2.ttf);
+}
+body{
+  background-color: rgb(33,31,35);
+  background-repeat: no-repeat;
+  font-family: game_font;
+  @include filter-gradient(#53455b, #201e22, horizontal);
+  @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
+  color: white;
+  text-align : center;
+}
+
+.rock-button,
+.paper-button,
+.scissor-button,.user_move,.comp_move{
+  height: 120px;
+  margin-top: 40px;
+}
+.emoji-container,.user_cont{
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  margin: 10px;
+  height: 200px;
+  width : 200px;
+  border-style: solid;
+  border-color : white;
+  border-width: 2px;
+  border-radius: 49%;
+  align-content: center;
+  justify-content: center;
+}
+@keyframes zoominoutsinglefeatured {
+	0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(0,1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.result_popup{
+  position: fixed;
+  box-shadow:0 6px 20px 0 rgba(100, 156, 131, 0.9);
+  background-color: rgb(33,31,35);
+  background-repeat: no-repeat;
+  @include filter-gradient(#53455b, #201e22, horizontal);
+  @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
+  left:450px;
+  top:100px;
+  z-index: 1; 
+  display: none;
+  animation:none;
+  vertical-align: center;
+  text-align: center;
+  border-style: solid;
+  border-color : white;
+  border-radius: 10px;
+  border-width: 2px;
+  height : 400px;
+  width : 600px;
+}
+
+.popup_first{
+  margin-top:40px;
+  display: inline-block;
+}
+.final_result{
+  font-size: 30px;
+}
+.move{
+  display:block;
+}
+.user_pop,.comp_pop{
+  display:inline-block;
+}
+table{
+  margin-left:640px;
+  text-align: center;
+  width:250px;
+  height: 200px;
+}
+.initial{
+  display:inline-block;
+  background-color: rgb(33,31,35);
+  border:2px;
+  border-color: white;
+  border-style: solid;
+  height: 90%;
+  width:50%;
+  padding:10px 10px 10px;
+  position: fixed;
+  top: 3%;
+  left:24%;
+}
+.initial img{
+  margin-left: 60px;
+  display: block;
+}
+.initial button{
+  background-color: rgb(33,31,35);
+  color : white; 
+  margin-top: 20px;
+  height : 60px;
+  width : 150px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-family: game_font;
+}
+.logo{
+  margin-bottom: 50px;
+}
+.logo img{
+  display: block;
+  margin-top: -45px;
+  margin-left: -5px;
+  height : 250px;;
+  width: 40%;
+}
+.logo_text p{
+  font-family: game_font;
+  margin-top: -220px;
+  margin-left: 200px;
+  font-size: 45px;
+}
